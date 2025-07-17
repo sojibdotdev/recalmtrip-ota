@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Bai Jamjuree Font Classes */
+.bai-jamjuree-extralight {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.bai-jamjuree-light {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.bai-jamjuree-regular {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bai-jamjuree-medium {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.bai-jamjuree-semibold {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.bai-jamjuree-bold {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bai-jamjuree-extralight-italic {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.bai-jamjuree-light-italic {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.bai-jamjuree-regular-italic {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.bai-jamjuree-medium-italic {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.bai-jamjuree-semibold-italic {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.bai-jamjuree-bold-italic {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Focus styles */
+button:focus,
+input:focus,
+select:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
