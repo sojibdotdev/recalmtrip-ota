@@ -30,7 +30,8 @@ export default function HotelRecommendations() {
   ]
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
+    <div className="bg-white py-12">
+      <div className="max-w-7xl mx-auto px-4">
       <h2 className="text-3xl bai-jamjuree-bold text-gray-900 mb-8">Discover your new favorite stay</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
@@ -52,6 +53,7 @@ export default function HotelRecommendations() {
             </CardContent>
           </Card>
         ))}
+      </div>
       </div>
     </div>
   )

@@ -122,15 +122,17 @@ export default function SearchForm() {
             </TabsTrigger>
           </TabsList>
 
-          <AnimatePresence mode="wait">
-            <TabsContent value="flights" className="mt-6">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.3 }}
-                className="bg-white rounded-lg p-6 shadow-lg"
-              >
+          <TabsContent value="flights" className="mt-6">
+            <AnimatePresence mode="wait">
+              {activeTab === "flights" && (
+                <motion.div
+                  key="flights-form"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.3 }}
+                  className="bg-white rounded-lg p-6 shadow-lg"
+                >
                 <form onSubmit={handleFlightSearch}>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
                     <div className="space-y-2">
@@ -217,17 +219,22 @@ export default function SearchForm() {
                     </motion.div>
                   </div>
                 </form>
-              </motion.div>
-            </TabsContent>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </TabsContent>
 
-            <TabsContent value="hotels" className="mt-6">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.3 }}
-                className="bg-white rounded-lg p-6 shadow-lg"
-              >
+          <TabsContent value="hotels" className="mt-6">
+            <AnimatePresence mode="wait">
+              {activeTab === "hotels" && (
+                <motion.div
+                  key="hotels-form"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.3 }}
+                  className="bg-white rounded-lg p-6 shadow-lg"
+                >
                 <form onSubmit={handleHotelSearch}>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div className="space-y-2">
@@ -294,17 +301,22 @@ export default function SearchForm() {
                     </Button>
                   </motion.div>
                 </form>
-              </motion.div>
-            </TabsContent>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </TabsContent>
 
-            <TabsContent value="esim" className="mt-6">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.3 }}
-                className="bg-white rounded-lg p-6 shadow-lg"
-              >
+          <TabsContent value="esim" className="mt-6">
+            <AnimatePresence mode="wait">
+              {activeTab === "esim" && (
+                <motion.div
+                  key="esim-form"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.3 }}
+                  className="bg-white rounded-lg p-6 shadow-lg"
+                >
                 <form onSubmit={handleEsimSearch}>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="space-y-2">
@@ -347,17 +359,22 @@ export default function SearchForm() {
                     </div>
                   </div>
                 </form>
-              </motion.div>
-            </TabsContent>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </TabsContent>
 
-            <TabsContent value="tours" className="mt-6">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.3 }}
-                className="bg-white rounded-lg p-6 shadow-lg"
-              >
+          <TabsContent value="tours" className="mt-6">
+            <AnimatePresence mode="wait">
+              {activeTab === "tours" && (
+                <motion.div
+                  key="tours-form"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.3 }}
+                  className="bg-white rounded-lg p-6 shadow-lg"
+                >
                 <form onSubmit={handleTourSearch}>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div className="space-y-2">
@@ -408,9 +425,10 @@ export default function SearchForm() {
                     </div>
                   </div>
                 </form>
-              </motion.div>
-            </TabsContent>
-          </AnimatePresence>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </TabsContent>
         </Tabs>
       </div>
     </div>

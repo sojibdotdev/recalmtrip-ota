@@ -52,7 +52,8 @@ export default function FlightDeals() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
+    <div className="bg-white py-12">
+      <div className="max-w-7xl mx-auto px-4">
       <div className="flex items-center justify-between mb-8">
         <h2 className="text-3xl bai-jamjuree-bold text-gray-900">Find flight deals to popular destinations</h2>
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -86,6 +87,7 @@ export default function FlightDeals() {
           </motion.div>
         ))}
       </motion.div>
+      </div>
     </div>
   )
 }

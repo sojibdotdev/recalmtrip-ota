@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main>
+      <main className="bg-white">
         <SearchForm />
         <HeroSection />
         <PromotionalBanners />

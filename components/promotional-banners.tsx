@@ -24,7 +24,8 @@ export default function PromotionalBanners() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
+    <div className="bg-white py-8">
+      <div className="max-w-7xl mx-auto px-4">
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -64,6 +65,7 @@ export default function PromotionalBanners() {
           </motion.div>
         </motion.div>
       </motion.div>
+      </div>
     </div>
   )
 }

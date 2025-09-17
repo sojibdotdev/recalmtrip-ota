@@ -47,7 +47,8 @@ export default function UniqueStays() {
   ]
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
+    <div className="bg-white py-12">
+      <div className="max-w-7xl mx-auto px-4">
       <div className="flex items-center justify-between mb-8">
         <h2 className="text-3xl bai-jamjuree-bold text-gray-900">Explore unique stays</h2>
         <Button variant="outline" className="bai-jamjuree-semibold">
@@ -91,6 +92,7 @@ export default function UniqueStays() {
             </CardContent>
           </Card>
         ))}
+      </div>
       </div>
     </div>
   )

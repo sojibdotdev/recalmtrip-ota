@@ -43,7 +43,7 @@ export default function LastMinuteDeals() {
   ]
 
   return (
-    <div className="bg-gray-50 py-12">
+    <div className="bg-white py-12">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-3xl bai-jamjuree-bold text-gray-900">Last-minute weekend deals</h2>
